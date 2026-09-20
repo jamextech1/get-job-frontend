@@ -306,7 +306,7 @@ export function MeView({ profile, digestOff }: { profile: MeProfile; digestOff: 
           <div className="mt-3 rounded-card border border-dashed border-border bg-surface p-6 text-center">
             <p className="font-medium text-ink">No applications yet.</p>
             <p className="mt-1 text-sm text-muted">
-              Jobs you apply to through get_job show up here.
+              Jobs you apply to through Get Job show up here.
             </p>
           </div>
         ) : (

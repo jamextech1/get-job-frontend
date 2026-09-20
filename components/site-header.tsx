@@ -8,7 +8,7 @@ export function SiteHeader({ initiallyAuthed }: { initiallyAuthed: boolean }) {
       <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <div className="flex items-baseline gap-3">
           <Link href="/" className="text-lg font-semibold tracking-tight text-ink">
-            get_job
+            Get Job
           </Link>
           <p className="hidden text-sm text-muted sm:block">Remote-first job discovery</p>
         </div>

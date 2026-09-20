@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-const themeBootstrap = `(function(){try{var t=localStorage.getItem('get_job-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d)}catch(e){}})()`;
+const themeBootstrap = `(function(){try{var t=localStorage.getItem('get-job-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d)}catch(e){}})()`;
 
 export default async function RootLayout({
   children,

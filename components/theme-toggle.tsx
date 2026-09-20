@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-const STORAGE_KEY = 'get_job-theme'
+const STORAGE_KEY = 'get-job-theme'
 
 function isDarkActive(): boolean {
   return document.documentElement.classList.contains('dark')
