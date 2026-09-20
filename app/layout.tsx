@@ -9,13 +9,43 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "get_job",
-    template: "%s · get_job",
+    default: "Get Job — Remote Job Discovery",
+    template: "%s · Get Job",
   },
-  description: "Remote-first job discovery. Free to browse, no signup needed.",
+  description: "Discover remote-first jobs. Free to browse, no signup required. Filter by role, company, or keyword.",
+  keywords: ["remote jobs", "work from home", "job board", "tech jobs", "remote work", "career"],
+  authors: [{ name: "okorojames", url: "https://okorojames.com" }],
+  creator: "okorojames",
+  publisher: "okorojames",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://get-job.okorojames.com",
+    siteName: "Get Job",
+    title: "Get Job — Remote Job Discovery",
+    description: "Discover remote-first jobs. Free to browse, no signup required.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Get Job - Remote Job Discovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get Job — Remote Job Discovery",
+    description: "Discover remote-first jobs. Free to browse, no signup required.",
+    images: ["/og-image.png"],
+  },
   icons: {
     icon: "/gj-logo.png",
+    shortcut: "/gj-logo.png",
+    apple: "/gj-logo.png",
   },
+  manifest: "/site.webmanifest",
 };
 
 const themeBootstrap = `(function(){try{var t=localStorage.getItem('get_job-theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d)}catch(e){}})()`;

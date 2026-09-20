@@ -60,7 +60,7 @@ export async function fetchJobsRevalidated(
   baseUrl: string,
   query: JobsQuery,
 ): Promise<JobsResponse> {
-  return fetchJobs(baseUrl, query, { next: { revalidate: 30 } })
+  return fetchJobs(baseUrl, query, { cache: 'no-store' })
 }
 
 export async function fetchCompanies(baseUrl: string, init?: RequestInit): Promise<CompanyItem[]> {
@@ -82,7 +82,7 @@ export async function fetchCompanies(baseUrl: string, init?: RequestInit): Promi
 }
 
 export async function fetchCompaniesRevalidated(baseUrl: string): Promise<CompanyItem[]> {
-  return fetchCompanies(baseUrl, { next: { revalidate: 30 } })
+  return fetchCompanies(baseUrl, { cache: 'no-store' })
 }
 
 export async function fetchJobDetail(
@@ -99,5 +99,5 @@ export async function fetchJobDetail(
 }
 
 export async function fetchJobDetailRevalidated(baseUrl: string, id: string): Promise<JobDetail | null> {
-  return fetchJobDetail(baseUrl, id, { next: { revalidate: 30 } })
+  return fetchJobDetail(baseUrl, id, { cache: 'no-store' })
 }
